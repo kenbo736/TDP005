@@ -24,25 +24,15 @@ public:
   void setPlayer(const std::string& file_name, int x, int y);
   void removeSprite(const Sprite* sprite);
   void addSprite(Sprite* sprite);
-  void deleteGauge();
-
+  void delete_gauge();
 
 private:
 
   Player* player = nullptr;
   Graphics* graphics;
 
-  Sprite* powerGaugeX_front;
-  Sprite* powerGaugeX_back;
-  Sprite* powerGaugeY_front;
-  Sprite* powerGaugeY_back;
-
-  void spawnEnemy();
-  void spawnPowerup();
-  void cleanSprites();
-  void changeBackground();
-  void spawnGauge();
-  void updateGauge();
-  void updateScore();
-  void updateFuel();
+    Sprite* powerGaugeX_front;
+    Sprite* powerGaugeX_back;
+      Sprite* powerGaugeY_front;
+      Sprite* powerGaugeY_back;
 };

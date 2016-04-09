@@ -38,7 +38,4 @@ private:
   int motion_blur = 127;
   int anim_tick_ms = 25;
   int anim_timestamp = 0;
-
-  void drawBackground(int, int, int, int, SDL_Point);
-  void drawSprites(std::vector<Sprite*>&, int, int, SDL_Point);
 };

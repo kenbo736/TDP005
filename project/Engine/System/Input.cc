@@ -73,12 +73,12 @@ bool Input::press_button(const SDL_Keycode& key, World& world,double deltatime)
          {
            world.setPlayer("captain-america.png", world.getPlayer()->rect.x, world.getPlayer()->rect.y);
            world.getPlayer()->launch();
-           world.deleteGauge();
+           world.delete_gauge();
          }
        }
        break;
     case SDLK_r:
-      if ( !world.getPlayer()->hasLaunched() ) world.deleteGauge();
+      if ( !world.getPlayer()->hasLaunched() ) world.delete_gauge();
       world.reset();
       break;
   }

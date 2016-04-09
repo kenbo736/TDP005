@@ -12,11 +12,11 @@ Game::Game()
 	// Initialize SDL
   if(SDL_Init(SDL_INIT_EVERYTHING) != 0)
 	{
-		cerr << "SDL_Init Error: " << SDL_GetError() << endl;
+		cout << "SDL_Init Error: " << SDL_GetError() << endl;
 		exit(1);
 	}
 
-  window = SDL_CreateWindow("Banana Boy",
+  window = SDL_CreateWindow("The Adenture of a fagit knight!!",
   SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
   SCREEN_WIDTH, SCREEN_HEIGHT, 0);
 
